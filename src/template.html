@@ -44,10 +44,11 @@
             <div> <span>How to Use?</span>
                 <div class="tut">
                 Open console => (right click then select inspect, in the panel that opens click the 'Console' tab at the top)</div>
+                <div>To create graph, use: <span class="code">const graph = new Graph(8)</span></div>
                 <div>To visualize how the chessboard looks, use:
                 <span class="code">`console.log(graph.matrix);`</span></div>
-                To find the shortest path for the knight, use the command:
-                g.knightMoves([start], [end]);
+                <div>To find the shortest path for the knight, use the command:
+                <span class="code">graph.knightMoves([start], [end]);</span></div>
                 Both start and end take two arguments: the x and y coordinates, ranging from [0, 0] to [7, 7].
                 The function returns an array representing the shortest possible path the knight can take.</div>
         </div>

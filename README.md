@@ -25,8 +25,8 @@ Create a new graph using:
 `const graph = new Graph(8);`
 To visualize how the chessboard looks, use:
 `console.log(graph.matrix);`
-To find the shortest path for the knight, use the command:
-KnightMoves([start], [end]);
+To find the shortest path for the knight, use the method:
+graph.knightMoves([start], [end]);
 Both start and end take two arguments: the x and y coordinates, ranging from [0, 0] to [7, 7].
 The function returns an array representing the shortest possible path the knight can take.
 
