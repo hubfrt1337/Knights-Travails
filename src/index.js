@@ -39,7 +39,6 @@ class Graph{
             //console.log(queue)
             let curr = queue.shift();
             if(curr === end){
-                console.log("found")
                 return this.reconstructPath(visitedVertices, start, end)
             }
             let currAdj = adjacency.get(curr);
@@ -57,8 +56,6 @@ class Graph{
         return;
     }
 }
-const g = new Graph(64);
-g.knightMoves([0,7], [0,0]);
 
 function createConnections(vertex){
     vertex = JSON.parse(vertex);
@@ -80,3 +77,4 @@ function createConnections(vertex){
 }
 
 
+window.Graph = Graph;
